@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Data Entry</h1>
+    <!--This section is to be used for labeling of entry fields-->
+<div class="DEP-headder row">
+    <p>Data Entry For Project Rian</p>
+</div>
+<!--This section is for input fields-->
+<div class="DEP-entry row">
+    <div>
+        <form action="">
+            <div class="cover"></div>
+        <div class="col">
+            <input type="text" placeholder="Name" id="name" class="full">
+        </div>
+        <div class="col">
+            <input type="text" placeholder="Address" id="address" class="full">
+        </div>
+        <div class="col">
+            <input type="tel" placeholder="xxx-xxx-xxxx" id="phone" class="full" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </div>
+        <div class="col">
+            <input type="date" placeholder="D.O.B." id="dob" class="full">
+        </div>
+        <div class="col">
+            <select name="favCol" placeholder="Favorite Color" id="favCol" class="full">
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+            </select>
+        </div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        </form>
+        
+    </div>
+</div>
+       
+<script src="index.js"></script>
+</body>
+</html>
