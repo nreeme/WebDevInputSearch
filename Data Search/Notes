@@ -1,0 +1,29 @@
+const mariadb = require('mariadb');
+
+const pool = mariadb.createpool({
+    host:'localhost',
+    user:'root',
+    password:'Welcome123!',
+    database:'employee records'
+})
+
+async function main(){
+    try{
+        let conn = await pool.getConnection();
+        let rows = await conn.query(/* SQL Commands Here*/ "SELECT * FROM employee records");
+        console.log(rows);
+
+    }catch(err){
+
+
+    }
+
+
+}
+
+main();
+
+function onLoad() {
+    alert("Function onLoad() called");
+    document.getElementById("timestamp").innerHTML = Date();
+}

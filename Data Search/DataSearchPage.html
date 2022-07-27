@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Search</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<h1>Data Search</h1>
+<body onload="onLoad()">
+<!--form action needs to be filled with search location ex:"/action_page.php"-->
+
+<div class="DEP-headder row">
+</div>
+
+<div class="DEP-entry row">
+<div>
+    <form action="">
+        <div class="cover"></div>
+    <div class="col">
+        <input type="text" placeholder="Name" id="name" class="full">
+    </div>
+    <div class="col">
+        <input type="text" placeholder="Address" id="address" class="full">
+    </div>
+    <div class="col">
+        <input type="number" placeholder="Phone Number" id="phone" class="full">
+    </div>
+    <div class="col">
+        <input type="date" placeholder="D.O.B." id="dob" class="full">
+    </div>
+    <div class="col">
+        <select name="favCol" placeholder="Favorite Color" id="favCol" class="full">
+            <option value="Red">Red</option>
+            <option value="Green">Green</option>
+            <option value="Blue">Blue</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+        </select>
+    </div>
+    <input type="submit" value="Search">
+    <input type="reset" value="Reset">
+    </form>
+    
+</div>
+</div>
+<script src="IndexDataSearch.js" type="application/javascript"></script>
+<br>
+    <footer class="container-fluid1">
+        Copyright 2022
+        <p id="timestamp"></p>
+    </footer>
+</body>
+</html>
